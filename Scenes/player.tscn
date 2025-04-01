@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdowr4tdbioil"]
+
+[ext_resource type="Script" uid="uid://cpvnn00f255c6" path="res://Scripts/sprite_2d.gd" id="1_i3pqv"]
+[ext_resource type="Texture2D" path="res://fortnite staring.jpg" id="2_hqtel"]
+[ext_resource type="Texture2D" path="res://Hurbert.jpg" id="3_sweqy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0lnlq"]
+size = Vector2(775.857, 870.72)
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_i3pqv")
+
+[node name="Daddy" type="Sprite2D" parent="."]
+texture = ExtResource("2_hqtel")
+
+[node name="Fill" type="Sprite2D" parent="Daddy"]
+position = Vector2(-288, 288)
+scale = Vector2(0.528125, 0.395833)
+texture = ExtResource("3_sweqy")
+
+[node name="Fill2" type="Sprite2D" parent="Daddy"]
+position = Vector2(286, 296)
+scale = Vector2(0.496875, 0.391667)
+texture = ExtResource("3_sweqy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.00012, 2)
+scale = Vector2(0.739827, 0.661521)
+shape = SubResource("RectangleShape2D_0lnlq")
