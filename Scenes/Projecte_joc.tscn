@@ -1,15 +1,41 @@
-[gd_scene load_steps=3 format=3 uid="uid://daf5wf4f88jik"]
+[gd_scene load_steps=5 format=3 uid="uid://upf5snq4evw5"]
 
-[ext_resource type="PackedScene" uid="uid://bdowr4tdbioil" path="res://player.tscn" id="1_vfduj"]
-[ext_resource type="PackedScene" uid="uid://c6niq6f63gxfd" path="res://wall.tscn" id="2_84mrq"]
+[ext_resource type="Script" uid="uid://cmma6hh7vxp1l" path="res://Scripts/projecte_joc.gd" id="1_v0a1b"]
+[ext_resource type="PackedScene" uid="uid://q4ylqkr52oyu" path="res://Scenes/Background.tscn" id="1_whc4t"]
+[ext_resource type="PackedScene" uid="uid://o0mlcrocahg1" path="res://Scenes/player.tscn" id="2_v0a1b"]
+[ext_resource type="PackedScene" uid="uid://b5ja86kwnydk2" path="res://Scenes/obstaculo.tscn" id="4_whc4t"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_v0a1b")
 
-[node name="Player" parent="." instance=ExtResource("1_vfduj")]
-position = Vector2(276, 238)
+[node name="Background" parent="." instance=ExtResource("1_whc4t")]
+position = Vector2(7499, 333)
+rotation = 1.5708
 
-[node name="Wall" parent="." instance=ExtResource("2_84mrq")]
-position = Vector2(307, -79)
+[node name="Player" parent="." instance=ExtResource("2_v0a1b")]
+position = Vector2(196, 329)
+scale = Vector2(0.5, 0.5)
 
-[node name="Wall2" parent="." instance=ExtResource("2_84mrq")]
-position = Vector2(877, 639)
+[node name="Obstaculo" parent="." instance=ExtResource("4_whc4t")]
+position = Vector2(691, 100)
+
+[node name="Obstaculo4" parent="." instance=ExtResource("4_whc4t")]
+position = Vector2(1750, 313)
+
+[node name="Obstaculo2" parent="." instance=ExtResource("4_whc4t")]
+position = Vector2(862, 559)
+
+[node name="Obstaculo3" parent="." instance=ExtResource("4_whc4t")]
+position = Vector2(1426, 574)
+
+[node name="Obstaculo5" parent="." instance=ExtResource("4_whc4t")]
+position = Vector2(2404, 96)
+
+[node name="Obstaculo6" parent="." instance=ExtResource("4_whc4t")]
+position = Vector2(2389, 551)
+
+[node name="Obstaculo7" parent="." instance=ExtResource("4_whc4t")]
+position = Vector2(3088, 333)
+
+[node name="Obstaculo8" parent="." instance=ExtResource("4_whc4t")]
+position = Vector2(3688, 584)
