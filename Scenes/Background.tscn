@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://q4ylqkr52oyu"]
+
+[ext_resource type="Texture2D" uid="uid://cntw0hr47ld4j" path="res://Images/fons_carrera.pgn.PNG" id="1_c8m3x"]
+
+[node name="ACTUAL Background" type="Sprite2D"]
+texture_repeat = 3
+position = Vector2(196.75, 0)
+scale = Vector2(2.41039, 1)
+texture = ExtResource("1_c8m3x")
+region_enabled = true
+region_rect = Rect2(0, -3642.8, 279, 15000)

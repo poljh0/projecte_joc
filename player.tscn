@@ -1,29 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://o0mlcrocahg1"]
+[gd_scene load_steps=4 format=3 uid="uid://o0mlcrocahg1"]
 
 [ext_resource type="Script" uid="uid://cpvnn00f255c6" path="res://Scripts/sprite_2d.gd" id="1_i3pqv"]
-[ext_resource type="Texture2D" uid="uid://d0igdws4qrieg" path="res://Images/fortnite staring.jpg" id="2_i3pqv"]
-[ext_resource type="Texture2D" uid="uid://ddsi28kr6xflf" path="res://Images/Hurbert.jpg" id="3_hqtel"]
+[ext_resource type="Texture2D" uid="uid://dxxtmo66l3dks" path="res://Images/Cotxe_porche.png" id="2_onrkg"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0lnlq"]
-size = Vector2(775.857, 870.72)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
+radius = 105.43
+height = 640.947
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_i3pqv")
 
-[node name="Daddy" type="Sprite2D" parent="."]
-texture = ExtResource("2_i3pqv")
-
-[node name="Fill" type="Sprite2D" parent="Daddy"]
-position = Vector2(-288, 288)
-scale = Vector2(0.528125, 0.395833)
-texture = ExtResource("3_hqtel")
-
-[node name="Fill2" type="Sprite2D" parent="Daddy"]
-position = Vector2(286, 296)
-scale = Vector2(0.496875, 0.391667)
-texture = ExtResource("3_hqtel")
+[node name="El meu cotxe" type="Sprite2D" parent="."]
+scale = Vector2(0.0763334, 0.0775521)
+texture = ExtResource("2_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.00012, 2)
+rotation = 1.5708
 scale = Vector2(0.739827, 0.661521)
-shape = SubResource("RectangleShape2D_0lnlq")
+shape = SubResource("CapsuleShape2D_onrkg")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(745, 0)
