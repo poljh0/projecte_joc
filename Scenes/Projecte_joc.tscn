@@ -9,7 +9,7 @@
 script = ExtResource("1_v0a1b")
 
 [node name="Background" parent="." instance=ExtResource("1_whc4t")]
-position = Vector2(7499, 333)
+position = Vector2(7499, 142)
 rotation = 1.5708
 
 [node name="Player" parent="." instance=ExtResource("2_v0a1b")]
